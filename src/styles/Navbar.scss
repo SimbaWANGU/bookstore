@@ -1,0 +1,39 @@
+$navbarColor : rgba(255, 255, 255, 0.6);
+$titleColor : rgba(0, 0, 255, 0.5);
+$navbarItemColor : rgba(128, 128, 128, 1);
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: $navbarColor;
+  font-family: Helvetica;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+
+  .navbarItem {
+    padding: 30px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: 300;
+    color: $navbarItemColor;
+  }
+  
+  .navbarTitle {
+    font-size: 150%;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: $titleColor;
+  }
+  
+  .marginSeparator {
+    margin-right: auto;
+  }
+
+  .iconPerson {
+    border: 1px solid $titleColor;
+    border-radius: 100%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+}
