@@ -1,0 +1,48 @@
+$genreColor : rgba(128, 128, 128, 0.5);
+$otherTextColor : rgba(0, 0, 255, 0.7);
+$margin : 4px;
+
+.bookDetailsContainer {
+  height: 100%;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.genre {
+  font-size: 16px;
+  color: $genreColor;
+  margin: $margin;
+  cursor: default;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: $margin;
+  cursor: default;
+}
+
+.author {
+  font-size: 16px;
+  margin: $margin;
+  color: $otherTextColor;
+  cursor: default;
+}
+
+.interactions {
+  display: flex;
+  flex-direction: row;
+  margin: 10px $margin $margin $margin;
+  padding: 0;
+  list-style-type: none;
+}
+
+.interactionItem {
+  margin: $margin $margin $margin 0;
+
+  a {
+    text-decoration: none;
+    color: $otherTextColor;
+    cursor: pointer;
+  }
+}
