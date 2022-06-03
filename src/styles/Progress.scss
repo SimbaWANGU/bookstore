@@ -1,0 +1,45 @@
+$currentChapterTextColor : rgba(128, 128, 128, 0.5);
+$buttonColor : rgba(0, 0, 255, 0.7);
+$buttonHoveredColor : rgba(0, 0, 255, 0.9);
+
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1%;
+
+  p {
+    margin: auto;
+    color: $currentChapterTextColor;
+    font-size: 16px;
+    padding: 1% 0 0 0;
+  }
+
+  h3 {
+    margin: auto;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5%;
+  }
+
+  button {
+    margin: auto;
+    padding: 5%;
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+  button:hover {
+    background-color: $buttonHoveredColor;
+    transform: scale(1.01);
+    transition: 0.4s ease-out;
+  }
+
+  button:active {
+    transform: scale(0.99);
+    transition: 0.4s ease-in;
+  }
+}

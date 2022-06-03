@@ -1,0 +1,17 @@
+$backgroundColor : white;
+$borderColor : rgba(200, 200, 200, 0.5);
+
+.bookContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 25%;
+  width: 80%;
+  margin: auto;
+  margin-top: 1%;
+  background-color: $backgroundColor;
+  border: 1px solid $borderColor;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(31, 38, 135, 0.37);
+}

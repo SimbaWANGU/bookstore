@@ -1,0 +1,28 @@
+$completionTectColor : rgba(100, 100, 100, 0.8);
+
+.percentageCompletionContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 40%;
+}
+
+.circle {
+  width: 30%;
+  margin: auto 0 auto 0;
+}
+
+.numericValueContainer {
+  margin: auto 0 auto 5%;
+
+  h2 {
+    margin: 0;
+    font-weight: 400;
+    color: $completionTectColor;
+  }
+
+  p {
+    margin: 0;
+    color: $completionTectColor;
+  }
+}
