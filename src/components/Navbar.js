@@ -6,8 +6,12 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbarTitle navbarItem">Bookstore</div>
-      <div className="navbarItem">About Us</div>
-      <div className="navbarItem marginSeparator">Contact</div>
+      <div className="navbarItem">
+        <a href="/">Books</a>
+      </div>
+      <div className="navbarItem marginSeparator">
+        <a href="/Categories">Categories</a>
+      </div>
       <div className="navbarItem iconPerson">
         <PersonIcon color="primary" />
       </div>

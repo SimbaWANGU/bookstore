@@ -9,9 +9,9 @@ function BookDetails() {
       <p className="author">Suzanne Collins</p>
       <ul className="interactions">
         <li className="interactionItem"><a href="/#">Comments</a></li>
-        <hr />
+        <hr className="lineBreak" />
         <li className="interactionItem"><a href="/#">Remove</a></li>
-        <hr />
+        <hr className="lineBreak" />
         <li className="interactionItem"><a href="/#">Edit</a></li>
       </ul>
     </div>

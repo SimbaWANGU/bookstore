@@ -29,20 +29,26 @@ $margin : 4px;
   cursor: default;
 }
 
+.lineBreak {
+  height: 15px;
+  margin: auto !important;
+}
+
 .interactions {
   display: flex;
   flex-direction: row;
-  margin: 10px $margin $margin $margin;
+  margin: 10px $margin $margin 0;
   padding: 0;
   list-style-type: none;
 }
 
 .interactionItem {
-  margin: $margin $margin $margin 0;
+  margin: $margin $margin $margin $margin;
 
   a {
     text-decoration: none;
     color: $otherTextColor;
     cursor: pointer;
+    margin: $margin $margin $margin 0;
   }
 }
