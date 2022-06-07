@@ -1,5 +1,6 @@
 $genreColor : rgba(128, 128, 128, 0.5);
 $otherTextColor : rgba(0, 0, 255, 0.7);
+$buttonHoveredColor : rgba(0, 0, 255, 0.9);
 $margin : 4px;
 
 .bookDetailsContainer {
@@ -45,10 +46,25 @@ $margin : 4px;
 .interactionItem {
   margin: $margin $margin $margin $margin;
 
-  a {
+  button {
     text-decoration: none;
     color: $otherTextColor;
     cursor: pointer;
     margin: $margin $margin $margin 0;
+    background-color: white;
+    border: none;
+  }
+
+  button:hover {
+    background-color: $buttonHoveredColor;
+    transform: scale(1.01);
+    transition: 0.4s ease-out;
+    color: white;
+    border-radius: 5px;
+  }
+
+  button:active {
+    transform: scale(0.99);
+    transition: 0.4s ease-in;
   }
 }
