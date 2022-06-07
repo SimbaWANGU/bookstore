@@ -2,9 +2,10 @@
 const CHECK_STATUS = 'bookstore/category/CHECK_STATUS';
 
 // Action Creators
-export function checkStatus() {
+export function checkStatus(text) {
   return {
     type: CHECK_STATUS,
+    payload: text,
   };
 }
 
@@ -13,7 +14,7 @@ const initialCategories = [];
 export default function categoryReducer(allCategories = initialCategories, action) {
   switch (action.type) {
     case CHECK_STATUS: {
-      return 'Under Construction';
+      return action.payload;
     }
     default: {
       return allCategories;
