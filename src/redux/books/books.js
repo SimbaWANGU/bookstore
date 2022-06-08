@@ -36,6 +36,7 @@ export default function allBooksReducer(state = [], action) {
       return [...state, action.payload];
     }
     case REMOVE_BOOK: {
+      deleteBook(action.payload);
       return state.filter((book) => book.item_id !== action.payload);
     }
     case SET_BOOKS: {
