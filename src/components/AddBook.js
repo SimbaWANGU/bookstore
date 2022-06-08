@@ -12,10 +12,10 @@ function AddBook() {
       return 'enter value';
     }
     const newBookObject = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
       author,
-      completion: Math.trunc(Math.random() * 100) / 100,
+      category: 'Fiction',
     };
     dispatch(addBook(newBookObject));
     return 'success';
