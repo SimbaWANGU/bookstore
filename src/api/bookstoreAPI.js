@@ -12,4 +12,13 @@ const fetchBooks = async () => {
   return resData;
 };
 
-export { fetchBooks };
+const createBook = async (book) => {
+  const values = JSON.stringify(book);
+  await fetch(baseURL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+    body: values,
+  });
+};
+
+export { fetchBooks, createBook };
