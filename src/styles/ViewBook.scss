@@ -21,7 +21,7 @@ $borderColor : rgba(200, 200, 200, 0.5);
   animation-duration: 1s; //running slower to show effect
   animation-delay: 0.5s;
   animation-name: animate-fade;
-  animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
   animation-fill-mode: backwards;
 }
 
@@ -29,15 +29,16 @@ $borderColor : rgba(200, 200, 200, 0.5);
   animation-name: animate-flip;
   transform-style: preserve-3d;
   perspective: 1000px;
-  }
-  @keyframes animate-flip {
-  0% {
-  opacity: 0;
-  transform: rotateX(-120deg) scale(0.9,0.9);
-  }
-  100% {
-      opacity: 1;
-      transform: rotateX(0deg) scale(1,1);
-  }
 }
 
+@keyframes animate-flip {
+  0% {
+    opacity: 0;
+    transform: rotateX(-120deg) scale(0.9, 0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1, 1);
+  }
+}
