@@ -21,4 +21,10 @@ const createBook = async (book) => {
   });
 };
 
-export { fetchBooks, createBook };
+const deleteBook = async (id) => {
+  await fetch(`${baseURL}/${id}`, {
+    method: 'DELETE',
+  });
+};
+
+export { fetchBooks, createBook, deleteBook };
