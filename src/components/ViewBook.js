@@ -9,11 +9,12 @@ function ViewBook({
   id,
   author,
   title,
+  category,
   completion,
 }) {
   return (
-    <div className="bookContainer">
-      <BookDetails title={title} author={author} id={id} />
+    <div className="bookContainer animate flip">
+      <BookDetails title={title} author={author} id={id} category={category} />
       <CompletionPercentage completion={completion} />
       <Progress />
     </div>
