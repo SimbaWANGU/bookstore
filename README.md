@@ -13,6 +13,11 @@ The Bookstore is a website created with the MVP model that allows the user to:
 - React
 - Redux
 - SCSS
+- With Love ❤️
+
+## Live Demo 🔗
+
+Check the live link to the project [here](https://bookstor-e.herokuapp.com/)👈
 
 ### Prerequisites
 
