@@ -1,0 +1,44 @@
+$backgroundColor : white;
+$borderColor : rgba(200, 200, 200, 0.5);
+
+.bookContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 20%;
+  width: 80%;
+  margin: auto;
+  margin-top: 1%;
+  background-color: $backgroundColor;
+  border: 1px solid $borderColor;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(31, 38, 135, 0.37);
+}
+
+.animate {
+  animation-duration: 0.75s;
+  animation-duration: 1s; //running slower to show effect
+  animation-delay: 0.5s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-fill-mode: backwards;
+}
+
+.animate.flip {
+  animation-name: animate-flip;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes animate-flip {
+  0% {
+    opacity: 0;
+    transform: rotateX(-120deg) scale(0.9, 0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1, 1);
+  }
+}

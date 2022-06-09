@@ -1,0 +1,71 @@
+$genreColor : rgba(128, 128, 128, 1);
+$otherTextColor : rgba(0, 0, 255, 0.7);
+$buttonHoveredColor : rgba(0, 0, 255, 0.9);
+$margin : 4px;
+
+.bookDetailsContainer {
+  height: 100%;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.genre {
+  font-size: 16px;
+  color: $genreColor;
+  margin: $margin;
+  cursor: text;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: $margin;
+  cursor: text;
+}
+
+.author {
+  font-size: 16px;
+  margin: $margin;
+  color: $otherTextColor;
+  cursor: text;
+}
+
+.lineBreak {
+  height: 15px;
+  margin: auto !important;
+}
+
+.interactions {
+  display: flex;
+  flex-direction: row;
+  margin: 10px $margin $margin 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.interactionItem {
+  margin: $margin $margin $margin $margin;
+
+  button {
+    text-decoration: none;
+    color: $otherTextColor;
+    cursor: pointer;
+    margin: $margin $margin $margin 0;
+    background-color: white;
+    border: none;
+    transition: 0.4s ease;
+  }
+
+  button:hover {
+    background-color: $buttonHoveredColor;
+    transform: scale(1.01);
+    transition: 0.4s ease-out;
+    color: white;
+    border-radius: 5px;
+  }
+
+  button:active {
+    transform: scale(0.99);
+    transition: 0.4s ease-in;
+  }
+}

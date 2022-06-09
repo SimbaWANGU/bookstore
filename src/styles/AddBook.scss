@@ -1,0 +1,80 @@
+$backgroundColor : white;
+$borderColor : rgba(200, 200, 200, 0.5);
+$titleColor : rgba(128, 128, 128, 1);
+$cardBackgroundColor : rgba(255, 255, 255, 0);
+$buttonColor : rgba(0, 0, 255, 0.7);
+$buttonHoveredColor : rgba(0, 0, 255, 0.9);
+
+.addBookSection {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  justify-content: flex-start;
+  height: 13%;
+  margin: auto;
+  width: 95%;
+  margin-top: 1%;
+  background-color: $cardBackgroundColor;
+  border: 1px solid $borderColor;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(31, 38, 135, 0.37);
+
+  h2 {
+    color: $titleColor;
+    margin-top: 0.5%;
+  }
+
+  input {
+    background-color: $backgroundColor;
+    border: 1px solid $borderColor;
+    line-height: 25px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  input:hover {
+    transform: scale(1.01);
+    transition: 0.4s ease-out;
+  }
+
+  input:focus {
+    outline: none;
+    border: 1px solid $buttonColor;
+    border-radius: 5px;
+  }
+}
+
+.addBookForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .bookTitle {
+    width: 50%;
+  }
+
+  .bookAuthor {
+    width: 40%;
+  }
+
+  button {
+    padding: 1%;
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+  button:hover {
+    background-color: $buttonHoveredColor;
+    transform: scale(1.01);
+    transition: 0.4s ease-out;
+  }
+
+  button:active {
+    transform: scale(0.99);
+    transition: 0.4s ease-in;
+  }
+}
