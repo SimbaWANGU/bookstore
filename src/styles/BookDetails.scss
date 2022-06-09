@@ -1,4 +1,4 @@
-$genreColor : rgba(128, 128, 128, 0.5);
+$genreColor : rgba(128, 128, 128, 1);
 $otherTextColor : rgba(0, 0, 255, 0.7);
 $buttonHoveredColor : rgba(0, 0, 255, 0.9);
 $margin : 4px;
@@ -13,21 +13,21 @@ $margin : 4px;
   font-size: 16px;
   color: $genreColor;
   margin: $margin;
-  cursor: default;
+  cursor: text;
 }
 
 .title {
   font-size: 24px;
   font-weight: 500;
   margin: $margin;
-  cursor: default;
+  cursor: text;
 }
 
 .author {
   font-size: 16px;
   margin: $margin;
   color: $otherTextColor;
-  cursor: default;
+  cursor: text;
 }
 
 .lineBreak {
@@ -53,6 +53,7 @@ $margin : 4px;
     margin: $margin $margin $margin 0;
     background-color: white;
     border: none;
+    transition: 0.4s ease;
   }
 
   button:hover {

@@ -26,6 +26,7 @@ function Book() {
           id={book.item_id}
           author={book.author}
           title={book.title}
+          category={book.category}
           completion={Math.trunc(Math.random() * 100) / 100}
         />
       ))}
